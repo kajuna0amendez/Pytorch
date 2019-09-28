@@ -22,10 +22,8 @@ def sigmoid(eval):
 
 def Neural_Training(Y01, Labels01 , eta , Epochs):
     """
-    A Neural Network 
+    6 year Old code for a Neural Network 
     """
-    
-    
     d,samplenumb = Y01.shape
 
     # Random [-1,1] init from Haykin  
