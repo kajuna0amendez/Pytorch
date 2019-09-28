@@ -3,7 +3,7 @@
 __author__ = "Andres Mendez-Vazquez"
 __copyright__ = "Copyright 2018"
 __credits__ = ["Andres Mendez-Vazquez"]
-__license__ = "Closed"
+__license__ = "Open"
 __version__ = "v1.0.0"
 __maintainer__ = "Andres Mendez-Vazquez"
 __email =  "kajuna0kajuna@gmail.com"
