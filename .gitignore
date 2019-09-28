@@ -1,5 +1,0 @@
-__init__.py
-__pycache__/
-train-images.idx3-ubyte
-train-labels.idx1-ubyte
-.gitignore
