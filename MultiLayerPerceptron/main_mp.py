@@ -34,7 +34,8 @@ if __name__ == '__main__':
     num_epochs_gpu = 3000
     
     # Load data
-    X, Y = loadlocal_mnist( images_path='data/train-images.idx3-ubyte', labels_path='data/train-labels.idx1-ubyte')
+    X, Y = loadlocal_mnist(images_path='../data/train-images.idx3-ubyte',\
+                           labels_path='../data/train-labels.idx1-ubyte')
 
     X01 = X[np.logical_or(Y==0 ,  Y==1)]
     Y01 = Y[np.logical_or(Y==0 ,  Y==1)]

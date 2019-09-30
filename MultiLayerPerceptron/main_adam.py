@@ -9,6 +9,8 @@ __maintainer__ = "Andres Mendez-Vazquez"
 __email =  "kajuna0kajuna@gmail.com"
 __status__ = "Development"
 
+import sys
+import os
 from MultiLayerPerceptronOpt import MultiLayerPerceptronOptim
 import numpy as np
 from mlxtend.data import loadlocal_mnist
@@ -18,10 +20,16 @@ from sklearn.model_selection import StratifiedKFold
 from scipy import interp
 from sklearn import preprocessing
 import torch.optim as optim
-from data_processing import Data
 from torch.utils import data 
 import torch
 import time
+
+PACKAGE_PARENT = '..'
+SCRIPT_DIR = os.path.dirname(os.path.realpath(os.path.join(os.getcwd(), os.path.expanduser(__file__))))
+sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
+
+from tools.data_processing import Data
+
 
 if __name__ == '__main__':
 
@@ -35,8 +43,8 @@ if __name__ == '__main__':
     num_epochs = 10
     
     # Load data
-    X, Y = loadlocal_mnist(images_path='data/train-images.idx3-ubyte',\
-                           labels_path='data/train-labels.idx1-ubyte')
+    X, Y = loadlocal_mnist(images_path='../data/train-images.idx3-ubyte',\
+                           labels_path='../data/train-labels.idx1-ubyte')
 
     X01 = X[np.logical_or(Y==0 ,  Y==1)]
     Y01 = Y[np.logical_or(Y==0 ,  Y==1)]
