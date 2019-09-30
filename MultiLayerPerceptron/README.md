@@ -1,8 +1,13 @@
-# Here are two codes:
-1. One for the pytorch implementation using CPU and GPU
-2. The other using the old numpy (Originally in matlab 16 years ago and now in Python around 5 years ago)
+# Mulitlayer Perceptron
 
-They show how your thinking tends to evolve with time.
+A series of multilayer perceptron implementations
+
+1. MultiLayerPerceptron.py testing of the performance on cpu and gpu
+
+2. MultiLayerPerceptronOpt.py hacking into the optim to use the backpropagation equations using the grad vector
+
+3. Adding the normalization layer from "Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift"
 
 Additionally:
-1. You have the pdf presentation for my class in MLP
+
+A series of papers and my class on multilayer perceptron
