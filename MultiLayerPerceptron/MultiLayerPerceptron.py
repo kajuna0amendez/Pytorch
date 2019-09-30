@@ -3,7 +3,7 @@
 __author__ = "Andres Mendez-Vazquez"
 __copyright__ = "Copyright 2018"
 __credits__ = ["Andres Mendez-Vazquez"]
-__license__ = "Closed"
+__license__ = "Open"
 __version__ = "v1.0.0"
 __maintainer__ = "Andres Mendez-Vazquez"
 __email =  "kajuna0kajuna@gmail.com"
@@ -36,6 +36,7 @@ class MultiLayerPerceptron_gpu(nn.Module):
         self.learning_rate = torch.tensor(learning_rate, dtype=torch.float, device=cuda)
         
         # Layers - using randn for the -1 and 1 selection
+        torch.cuda.seed_all()
         self.WIH = torch.randn(self.input_dim, self.hidden_dim, device=cuda)
         self.WHO = torch.randn(self.hidden_dim, self.output_dim, device=cuda)
 
