@@ -1,3 +1,7 @@
 # Pytorch
 
-Here, we are implementing a series of functions for the class on Neural Networks and Deeplearning
+Here, we are implementing a series of algorithms using pytorch
+
+## Multilayer Perceptron
+Here, we did not use the automatic differentiation at the pytorch but your own 
+version. 
